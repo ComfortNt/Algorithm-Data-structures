@@ -11,6 +11,10 @@ import  java.util.*;
 class Algorithm{
     public static void main(String[] args) {
 
+        // An array with a fixed size adding more than 2 items will return an error.
+        int array[] = new int[2];
+
+        ///////////////////////////////////////////////////////////////////////////////////////////
         Stack<String> mystack = new Stack<>();
 
         mystack.push("mystack-item-0");
@@ -23,9 +27,22 @@ class Algorithm{
         for( String i : mystack){
             System.out.println(i + favItem);
         };
+        ////////////////////////////////////////////////////////////////////////////////////////////
+        
+        // Queue = FiFo(first in first out. eg a shopping queue at the mall).
+        // the first index of the queue is the head the last is the tail.
+        // enqueuing adding data at the tail 
+        // dequeuing removing data from the dead 
+        // queue is an interface an intance of a queue cannot be created
 
+        Queue<String> shoppingLine = new PriorityQueue<>();
 
+            shoppingLine.poll(); // removes data from the head since queue uses FIFO
+            shoppingLine.offer("item"); // adds data at the tail of the queue
+            shoppingLine.offer("item");
+            shoppingLine.element(); // returns the data at the head without removing it
 
+           
     }
 
 }
