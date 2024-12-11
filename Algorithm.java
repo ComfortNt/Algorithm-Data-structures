@@ -42,7 +42,28 @@ class Algorithm{
             shoppingLine.offer("item");
             shoppingLine.element(); // returns the data at the head without removing it
 
-           
-    }
+        //////////////////////////////////////////////////////////////////////////////////
+        //LinkedList - a linkedlsit is a long chain of nodes connected to each other
+        // a node is the data and its pointer
+        // linkedlists are great for deleting and insertion of data because their pointers
+        // a linkedlist can act like a Stack or Queue
+        // Singly list( data + pointer->) - doubly list (<-previouse pointer + data + next pointer->)
+
+        LinkedList<String> linkedlist = new LinkedList<>();
+
+       //Linkedlist as Stack LIFO
+        linkedlist.push("ONe");
+        linkedlist.push("favItem");
+        linkedlist.push("favItem1");
+        linkedlist.push("favItem2");
+        // Linkedlist as Queue FIFO
+       linkedlist.offer("ONe");
+       linkedlist.offer("favItem");
+       linkedlist.offer("favItem1");
+       linkedlist.offer("favItem2");
+
+       System.err.println(linkedlist);
+
+    } 
 
 }
