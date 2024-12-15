@@ -68,28 +68,26 @@ class Algorithm{
 
        // Big O notoation - describes the performance of an algorithm as data grows.
         
-
        // Linear Search - iterates through elemnets one at a time.
        // a linear search does not need to be sorted.
        // a linear search is good for small data sets.
 
+       int[] linear = {1,2,3,4,5,6,7};
 
-        int arry[] = {5,1,2,3,4,9};
-
-        System.out.println(LinearSearch(arry, 5));
+        System.out.println(LinearSearch(linear, 7));
     } 
 
+    static int LinearSearch(int[] array, int value){
+        
+            for(int i = 0; i < array.length; i++){
 
-    static int LinearSearch(int[] array , int value){
-
-        for( int i = 0 ; i < array.length ; i++){
-            if(array[i] == value){
-                return i;
-            };
-        };
-
-        return -1;
-    }
+                if(array[i] == value){
+                    return i;
+                };
+            }
+            return -1;
+    };
+    
 
    
 
