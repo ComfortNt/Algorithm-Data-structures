@@ -57,6 +57,7 @@ class Algorithm{
         linkedlist.push("favItem1");
         linkedlist.push("favItem2");
         // Linkedlist as Queue FIFO
+
        linkedlist.offer("ONe");
        linkedlist.offer("favItem");
        linkedlist.offer("favItem1");
@@ -64,6 +65,32 @@ class Algorithm{
 
        System.err.println(linkedlist);
 
+
+       // Big O notoation - describes the performance of an algorithm as data grows.
+        
+
+       // Linear Search - iterates through elemnets one at a time.
+       // a linear search does not need to be sorted.
+       // a linear search is good for small data sets.
+
+
+        int arry[] = {5,1,2,3,4,9};
+
+        System.out.println(LinearSearch(arry, 5));
     } 
+
+
+    static int LinearSearch(int[] array , int value){
+
+        for( int i = 0 ; i < array.length ; i++){
+            if(array[i] == value){
+                return i;
+            };
+        };
+
+        return -1;
+    }
+
+   
 
 }
