@@ -67,29 +67,58 @@ class Algorithm{
 
 
        // Big O notoation - describes the performance of an algorithm as data grows.
-        
+       
+       
+
        // Linear Search - iterates through elemnets one at a time.
        // a linear search does not need to be sorted.
        // a linear search is good for small data sets.
 
-       int[] linear = {1,2,3,4,5,6,7};
+    //    int[] linear = {1,2,3,4,5,6,7};
+    //     System.out.println(LinearSearch(linear, 7));
 
-        System.out.println(LinearSearch(linear, 7));
-    } 
-
-    static int LinearSearch(int[] array, int value){
         
-            for(int i = 0; i < array.length; i++){
+    // Binary search - finds the position of an element in a sorted array
+    // half of the array is eliminated during each step
 
-                if(array[i] == value){
-                    return i;
-                };
-            }
-            return -1;
-    };
-    
-    
+     //    int[] binary = {1,2,3,4,5,6,7,8};
 
-   
+        
 
+        //  System.out.println(BinarySearch(binary, 8));
+    } 
 }
+
+    // static int LinearSearch(int[] array, int value){
+        
+    //         for(int i = 0; i < array.length; i++){
+    //             if(array[i] == value){
+    //                 return i;
+    //             };
+    //         }
+    //         return -1;
+    // };
+    
+    
+//         static int BinarySearch(int[] array , int value){
+
+//         int first = 0;
+//         int last = array.length -1;
+
+//         while (first <= last) {
+            
+//             int middle = first + (last - first) / 2;
+//             int midValue = array[middle];
+
+//             if(value < midValue){
+//                 last = middle - 1;
+//             }else if( value > midValue){
+//                 first = middle + 1;
+//             }else{
+//                 return middle;
+//             }
+//         }
+        
+//         return-1;
+//     }
+// }
