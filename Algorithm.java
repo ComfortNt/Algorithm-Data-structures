@@ -86,8 +86,31 @@ class Algorithm{
         
 
         //  System.out.println(BinarySearch(binary, 8));
-    } 
-}
+
+        
+     }
+    }
+        
+//             private static void SelectionSort(int[] array) {
+                
+//                 for( int i = 0 ; i < array.length - 1; i++){
+//                     int min = array[i];
+
+//                     for(int j = i + 1 ; j < array.length ; j++){
+                        
+//                         if(array[i] > array[j]){
+//                             min = j;
+//                         }   
+   
+//                 }       int temp = array[i];
+//                         array[i] = array[min];
+//                         array[min] = temp;
+//             }
+                
+            
+          
+//             }       
+// }
 
     // static int LinearSearch(int[] array, int value){
         
