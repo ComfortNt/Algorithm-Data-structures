@@ -87,11 +87,22 @@ class Algorithm{
 
         //  System.out.println(BinarySearch(binary, 8));
 
+        recursion(6);
+
+                
+             }
         
-     }
+            private static void recursion(int i) {  
+                if(i < 1){
+                    return;
+                }
+                System.out.println("walked");
+                recursion(i - 1);
+
+            };
     }
         
-//             private static void SelectionSort(int[] array) {
+//         private static void SelectionSort(int[] array) {
                 
 //                 for( int i = 0 ; i < array.length - 1; i++){
 //                     int min = array[i];

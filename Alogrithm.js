@@ -47,3 +47,30 @@ const BinarySearch =(array , value)=>{
 }
 
 console.log(BinarySearch(Sorted , 11));
+
+
+// Recursion
+
+
+    // const Again = (value)=>{
+
+    //     if(value < 1) return;
+
+    //     console.log(value);
+    //     Again(value -1);
+    // };
+
+    // Again(10);
+
+
+    const Factorial=(value)=>{
+
+        if (value < 1 ) return 1;
+       return value * Factorial( value - 1);
+    };
+
+   console.log( Factorial(9));
+
+   // Selection sort
+
+
