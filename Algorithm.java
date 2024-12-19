@@ -87,20 +87,46 @@ class Algorithm{
 
         //  System.out.println(BinarySearch(binary, 8));
 
-        recursion(6);
+        int[] array1 = {9,5,3,1,6,8,2,4,7,10};
 
-                
-             }
+
+        MergeSort(array1);
+          
+                     
+                                  
+}
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+       
+
+    private static void MergeSort(int[] array1) {
+
+        int length = array1.length;
+        if(length <= 1) return; //base case
+
+        int middle = length / 2;
+        int[] left = new int[middle];
+        int[] right = new int [length - middle];
+
+        int i = 0;
+        int j = 0;
+
+        for( ; i < length; i++){
+
+            if(i )
+        }
+
+     
+
+}  
+
+     private static void Merge(int[] right, int[] left , int array[] ){
+
+
+     };
+      
         
-            private static void recursion(int i) {  
-                if(i < 1){
-                    return;
-                }
-                System.out.println("walked");
-                recursion(i - 1);
-
-            };
-    }
+         
+}
         
 //         private static void SelectionSort(int[] array) {
                 
