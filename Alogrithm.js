@@ -66,6 +66,7 @@ console.log(BinarySearch(Sorted , 11));
     const Factorial=(value)=>{
 
         if (value < 1 ) return 1;
+        
        return value * Factorial( value - 1);
     };
 
@@ -73,4 +74,5 @@ console.log(BinarySearch(Sorted , 11));
 
    // Selection sort
 
-
+   
+   
