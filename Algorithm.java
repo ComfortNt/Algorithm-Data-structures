@@ -90,61 +90,17 @@ class Algorithm{
         int[] array1 = {9,5,3,1,6,8,2,4,7,10};
 
 
-        MergeSort(array1);
-          
+        
                      
                                   
 }
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
        
 
-private static void MergeSort(int[] array1) {
-
-    int length = array1.length;
-    int middle = length / 2;
-
-     int[] leftArray = new int[middle];
-     int[] RightArray = new int[length - middle];
-     
-     int i = 0;
-     int j = 0;
-
-
-     for(; i < length ; i++){
-
-        if(i < length){
-            leftArray[i] = array1[i];
-        }else{
-            RightArray[j] = array1[i];
-            j++;
-        };
-     }
-
-     MergeSort(leftArray);
-     MergeSort(RightArray);
-     Merge(leftArray, RightArray, array1);
-}  
-
-     private static void Merge(int[] left, int[] right , int array[] ){
-
-
-        int leftsize = array.length / 2;
-        int rightsize = array.length - leftsize;
-
-        int i = 0;
-        int l = 0;
-        int r = 0;
-
-        while (l < leftsize && r < rightsize) {
-            
-            
-        }
-     };
-      
-        
-         
 }
         
+         
+     
 //         private static void SelectionSort(int[] array) {
                 
 //                 for( int i = 0 ; i < array.length - 1; i++){
