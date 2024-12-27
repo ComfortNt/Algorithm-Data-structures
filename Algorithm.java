@@ -90,7 +90,6 @@ class Algorithm{
         int[] array1 = {9,5,3,1,6,8,2,4,7,10};
 
 
-        
                      
                                   
 }
