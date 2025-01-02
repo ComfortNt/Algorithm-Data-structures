@@ -45,14 +45,13 @@ class Algorithm{
        linkedlist.offer("favItem1");
        linkedlist.offer("favItem2");
 
-        int[] array1 = {9,5,3,1,6,8,2,4,7,10};                    
-                                  
-
-       // System.out.println(LinearSearch(array1 , 11));
-
-        BinarySearch(array1 , 22);
+        int[] array1 = {9,5,3,1,6,8,2,4,7,6,10};                    
+                            
+                   // System.out.println(LinearSearch(array1 , 11));
+                   // BinarySearch(array1 , 22);
 }
-        
+            
+
             private static int BinarySearch(int[] array1, int num) {
                 
                 int first = 0;
@@ -74,22 +73,22 @@ class Algorithm{
 
                 return -1;
 
+            }     
+            private static int LinearSearch(int[] array1, int num) {
+                
+                for( int i = 0 ; i < array1.length ; i++){
+
+                    if(array1[i] == num){
+                        return i;
+                    }
+                  
+                }
+                 return -1;
             }
         
-            // private static int LinearSearch(int[] array1, int num) {
-                
-            //     for( int i = 0 ; i < array1.length ; i++){
-
-            //         if(array1[i] == num){
-            //             return i;
-            //         }
-                  
-            //     }
-            //      return -1;
-            // }
         
         
-        }
+}
 
 
    
