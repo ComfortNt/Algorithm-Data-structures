@@ -52,15 +52,15 @@ console.log(BinarySearch(Sorted , 11));
 // Recursion 
 
 
-    // const Again = (value)=>{
+    const Again = (value)=>{
 
-    //     if(value < 1) return;
+        if(value < 1) return;
 
-    //     console.log(value);
-    //     Again(value -1);
-    // };
+        console.log(value);
+        Again(value -1);
+    };
 
-    // Again(10);
+    Again(10);
 
 
     const Factorial=(value)=>{
