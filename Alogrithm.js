@@ -98,13 +98,12 @@ console.log(BinarySearch(Sorted , 11));
 
    // Promise 
 
-   let promise = new Promise(function(resolve , reject){
+   let promise = new Promise((resolve , reject)=>{
 
    // const x = 0;
     const x = 1;
 
         x ? resolve("Success") : reject("Fail");
-
    });
 
    promise.then( (res)=>{
@@ -116,3 +115,19 @@ console.log(BinarySearch(Sorted , 11));
         console.log(rej);
         
    });
+
+
+    // const funn = async()=>{
+
+    //     try {
+    //         let wait = await axios.get("url");
+
+    //         console.log(wait.data);
+    
+    //     } catch (error) {
+    //         console.log(error);
+            
+    //     }
+    // };
+
+    // funn();
