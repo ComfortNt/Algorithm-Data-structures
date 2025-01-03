@@ -96,5 +96,23 @@ console.log(BinarySearch(Sorted , 11));
 
    FizzBuzz(22);
 
+   // Promise 
 
-   
+   let promise = new Promise(function(resolve , reject){
+
+   // const x = 0;
+    const x = 1;
+
+        x ? resolve("Success") : reject("Fail");
+
+   });
+
+   promise.then( (res)=>{
+
+        console.log(res);
+        
+   } , (rej)=>{
+
+        console.log(rej);
+        
+   });
