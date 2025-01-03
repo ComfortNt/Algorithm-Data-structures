@@ -45,13 +45,35 @@ class Algorithm{
        linkedlist.offer("favItem1");
        linkedlist.offer("favItem2");
 
-        int[] array1 = {9,5,3,1,6,8,2,4,7,6,10};                    
-                            
-                   // System.out.println(LinearSearch(array1 , 11));
-                   // BinarySearch(array1 , 22);
-}
-            
+        int[] array1 = {9,5,3,1,6,8,2,4,7,6,10};
+        
+        FizzBuzz(20);
+        
+        
+                                    
+                           // System.out.println(LinearSearch(array1 , 11));
+                           // BinarySearch(array1 , 22);
+        }
+                    
+        
+            private static void FizzBuzz(int num) {
 
+                for( int i = 1; i <= num ; i++ ){
+
+                    if( i % 3 == 0 ){
+                        System.out.println(i + " " + "Fizz");
+                    }else if( i % 5 == 0 ){
+                        System.out.println(i + " " + "Buzz");
+                    }else if( i % 3 == 0 && i % 5 == 0){
+                        System.out.println(i + " " + "FizzBuzz");
+                    }else{
+                        System.out.println(i);
+                    };
+                };
+
+            };
+        
+        
             private static int BinarySearch(int[] array1, int num) {
                 
                 int first = 0;
@@ -85,8 +107,7 @@ class Algorithm{
                 }
                  return -1;
             }
-        
-        
+
         
 }
 
