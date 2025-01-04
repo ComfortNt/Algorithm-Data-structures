@@ -131,3 +131,23 @@ console.log(BinarySearch(Sorted , 11));
     // };
 
     // funn();
+
+    const closure = ()=>{
+
+        let counter = 0;
+       return ()=>{
+            return counter++;
+        };
+    };
+
+    let calculator = closure();
+
+    console.log(calculator() + " k ");
+    console.log(calculator() + " ke ");
+    console.log(calculator() + " kee ");
+    console.log(calculator() + " keep ");
+    console.log(calculator() + " keep i ");
+    console.log(calculator() + " keep it "); 
+    console.log(calculator() + " keep it u ");
+    console.log(calculator() + " keep it up ");
+    
