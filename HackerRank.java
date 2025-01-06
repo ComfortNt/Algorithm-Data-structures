@@ -5,13 +5,31 @@ public class HackerRank {
         
 
         int[] arry ={1,2,3,4,5};
-        System.out.println( "Answer is" +" "+ Sum(arry));
+      //  System.out.println( "Answer is" +" "+ Sum(arry));
 
         int[] jump = {0,1,0,0,0,1,0};
         
-        System.out.println( "Answer" +" "+ JumpClouds(jump));
-                
- }       
+     //   System.out.println( "Answer" +" "+ JumpClouds(jump));
+
+        Drawhashes(4);
+                        
+}       
+             private static void Drawhashes(int n) {
+               
+                for(int i = 1; i <= n ; i++){
+
+                    for(int j = 0; j < n - i; j++){
+                        System.out.print(" ");
+                    };
+
+                    for(int k = 0 ; k < i ; k++){
+                        System.out.print("#");
+                    }
+
+                    System.out.println();
+                };
+            };
+               
             private static int JumpClouds(int[] jump) {
                
                 int jumper = 0;
@@ -30,7 +48,8 @@ public class HackerRank {
 
                 return jumper;
             }
-                    private static int Sum(int[] arry) {
+           
+            private static int Sum(int[] arry) {
 
                 int sum = 0;   
                 for(int i = 0 ; i < arry.length ; i++){
