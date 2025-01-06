@@ -12,9 +12,23 @@ public class HackerRank {
      //   System.out.println( "Answer" +" "+ JumpClouds(jump));
 
         Drawhashes(4);
-                        
+
+        String p = "Comfort Ntiwane";
+
+        Reverse(p);
+                                
 }       
-             private static void Drawhashes(int n) {
+            private static void Reverse(String p) {
+                
+                int l = p.length() - 1;
+
+                for(; l >= 0 ; l-- ){
+                    System.out.print(p.charAt(l));
+                };
+                
+
+            };
+            private static void Drawhashes(int n) {
                
                 for(int i = 1; i <= n ; i++){
 
@@ -61,4 +75,4 @@ public class HackerRank {
 
 
     
-}
+};
