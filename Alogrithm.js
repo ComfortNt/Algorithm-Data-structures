@@ -150,4 +150,15 @@ console.log(BinarySearch(Sorted , 11));
     console.log(calculator() + " keep it "); 
     console.log(calculator() + " keep it u ");
     console.log(calculator() + " keep it up ");
-    
+    /////////////////////////////////////////////////// Hoisting
+
+    bruno();
+
+    function bruno(){
+        console.log("Bruno");   
+    };
+    // any thing on the right hand side of an equal sign cannot be hoisted
+    var fun = ()=>{
+        console.log("i cannot be hoisted");   
+    };
+

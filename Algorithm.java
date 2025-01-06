@@ -53,6 +53,7 @@ class Algorithm{
                                     
                            // System.out.println(LinearSearch(array1 , 11));
                            // BinarySearch(array1 , 22);
+                           
         }
                     
         
