@@ -162,3 +162,13 @@ console.log(BinarySearch(Sorted , 11));
         console.log("i cannot be hoisted");   
     };
 
+
+    const DarwHases=(n)=>{
+
+        
+    }; 
+
+    DarwHases(4)
+    
+    
+    
