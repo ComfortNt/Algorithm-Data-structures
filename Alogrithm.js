@@ -163,12 +163,6 @@ console.log(BinarySearch(Sorted , 11));
     };
 
 
-    const DarwHases=(n)=>{
 
-        
-    }; 
-
-    DarwHases(4)
-    
     
     
