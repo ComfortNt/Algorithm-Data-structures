@@ -162,7 +162,23 @@ console.log(BinarySearch(Sorted , 11));
         console.log("i cannot be hoisted");   
     };
 
+    const date = new Date();
 
+    let sec = date.getSeconds();
+
+    console.log("start");
+    
+    for(let i = 0 ; i < sec ; i++){
+        console.log("thread");
+    };
+
+    console.log("end");
+
+    const [,,a] = [1,2,3,4,5];
+        
+    console.log(a);
+    
+    
 
     
     
