@@ -179,6 +179,27 @@ console.log(BinarySearch(Sorted , 11));
     console.log(a);
     
     
+    const TwoSum=(arr , target)=>{
 
+        const map = new Map();
+
+
+      for(i = 0 ; i < arr.length ; i++){
+
+        const num = target - arr[i];
+
+        if(map.has(num)){
+            return map.get[arr[i] , i];
+        }
+
+        map.set(arr[i] , i);
+      }
+
+      return [];
+      
+    };
+
+        console.log( TwoSum([2,3,7,17] , 9));
+        
     
     
