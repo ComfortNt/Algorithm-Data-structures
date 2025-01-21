@@ -179,29 +179,25 @@ console.log(BinarySearch(Sorted , 11));
     console.log(a);
     
     
-    const TwoSum=(arr , target)=>{
+    // Slice return a new array starting at arr[i] negetive nums -1 start from the end of the arr
 
-        const map = new Map();
-
-
-      for(i = 0 ; i < arr.length ; i++){
-
-        const num = target - arr[i];
-
-        if(map.has(num)){
-            return map.get[arr[i] , i];
-        }
-
-        map.set(arr[i] , i);
-      }
-
-      return [];
-      
-    };
-
-        console.log( TwoSum([2,3,7,17] , 9));
-        
+    const SliceArr = ["one" , "Two" , "Three" , "Four" , "Five"];
+    const four =  SliceArr.slice(3 , 4) || SliceArr.slice(-2, -1);
+    console.log(four);
     
+    // returns an array where the last element is removed
 
+    const remove = ["dont remove" , "dont remove" ,"dont remove" ,"dont remove" , "remove"];
+    remove.pop();
+    
+    // returns an array where an items is added at the end of the arr
+    remove.push("removed");
+    // returns a new array length and adds item at the start of arr
+    remove.unshift("removed");
+
+
+    console.log(remove);
+    
+    //
     
     
